@@ -1,0 +1,260 @@
+/*Geral*/
+	html	{
+		height: 100%;
+	}
+	body	{
+		min-height: 100%;
+		margin: 0 5%;
+		background-color: #595;
+		position: relative;
+		color: white;
+		text-align: center;
+	}
+	main	{
+		padding-bottom: 200px;	/*espaço pro rodape*/
+		margin-top: 50px;
+	}
+/*Fim Geral*/
+
+/*Header Menu*/
+	#logo	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: 300px;
+	}
+	/*Menu List*/
+		#menu	{
+			background-color: #555;
+			overflow: hidden;
+		}
+		#menu ul	{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#menu a	{
+			float: left;
+			color: #FFF;
+			text-decoration: none;
+			padding: 16px 3%;
+			font-size: 100%;
+			cursor: pointer;
+		}
+		#menu a:hover	{
+			background-color: #000;
+		}
+	/*End Menu List*/
+/*End Header Menu*/
+
+/*Footer*/
+	footer{	
+		position: absolute;
+		bottom: 0;
+		height: 152px;
+		width: 100%;
+		text-align: center;
+	}
+	#rodape	{
+		height: 100px;
+		background-color: gray;
+		border: 1px solid black;
+		overflow: auto;
+	}
+	#rodape img	{
+		height: 32px;
+		width: 32px;
+		margin: 0 24px;
+	}
+	#rodape__2	{
+		width: 100%;
+		background-color: black;
+		position: absolute;
+		bottom: 0;
+	}
+/*End Footer*/
+
+/*Index*/
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 50px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.item {
+		background-color: gray;
+		overflow: auto;
+		border-radius: 30px;
+	}
+	.grid-container img	{
+		box-sizing: border-box;
+		width: 150px;
+		height: 150px;
+		padding: 10px;
+		float: left;
+	}
+	.grid-container h2	{
+		font-size: 36px;
+	}
+	.grid-container h3	{
+		text-align: left;
+		font-size: 32px;
+		margin: 0;
+	}
+	.grid-container p	{
+		font-size: 20px;
+		text-align: justify;
+		padding: 10px;
+		margin: 0;
+	}
+	.grid-container h6	{
+		background-color: yellow;
+		height: 50px;
+		line-height: 50px;
+		color: red;
+		font-size: 32px;
+		margin:  0;
+	}
+	.item button	{
+		background-color: green;
+		border: 2px solid blue;
+		border-radius: 0 0 30px 30px;
+		height: 100px;
+		width: 100%;
+		cursor: pointer;
+		font-size: 42px;
+	}
+	.item button:hover	{
+		background-color: lime;
+	}
+
+/*Fim Index*/
+
+/*Sabores*/
+	.row	{
+		height: 151px;
+		display: flex;
+		margin-bottom: 50px;
+	}
+	.row::after	{
+		content: "";
+		clear: both;
+		display: table;
+	}
+	/*Imagem*/
+		.sabor	{
+			width: 120px;
+			background-color: white;
+			border-radius: 5% 0 0 5%;
+		}
+		figure	{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+			font-style: italic;
+			text-align: center;
+			color: black;
+		}
+		figure img	{
+			height: 120px;
+			border-radius: 5% 0 0 0;
+			width: 120px;
+			background-image: url('../img/fundo.png');
+		}
+	/*Descrição*/	
+		.descricao	{
+			width: 100%;
+			padding: 0 16px;
+			background-color: black;
+			overflow: auto;
+			text-align: justify;
+		}
+		.nome_sabor	{
+			font-size: 28px;
+			text-align: center;
+		}
+	/*Fim Descrição*/
+	/*Preço*/
+		.preco	{
+			min-width: 130px;
+			padding: 0 20px;
+			color: white;
+			font-size: 32px;
+			background-color: lime;
+			text-align: center;
+			border-radius: 0 5% 5% 0;
+		}
+		.preco p	{
+			margin: 5px 0;
+		}
+		.preco select	{
+			margin: 10px 0 0;
+			font-size: 24px;
+		}
+
+	/*Fim Preço*/
+/*Fim Sabores*/
+
+/*Contato*/
+	/*Geral*/
+		form	{
+			margin: 50px auto;
+		}
+		.contato fieldset	{
+			border: 2px solid black;
+			margin: 0;
+			padding: 0;
+			background-color: #555;
+			border-radius: 10px;
+		}
+	/*Fim*/
+	/*Header*/
+		.contato h2	{
+			background: black;
+			margin: 0;
+			padding: 0;
+			border-radius: 10px 10px 0 0;
+		}
+	/*Fim*/
+	/*Corpo*/
+		.contato	{
+			width: 80%;
+		}
+		.contato section	{
+			padding: 15px 50px;
+			text-align: center;
+			font-size: 18px;
+		}
+		.contato input, .contato select, .contato textarea	{
+			margin-top: 10px;
+			width: 80%;
+			border-radius: 10px;
+		}
+		.contato textarea	{
+			min-width: 79.9%;
+			max-width: 80%;
+			min-height: 99.9px;
+			max-height: 100px;
+		}
+		.contato button	{
+			height: 50px;
+			width: 50%;
+			margin: 20px auto 50px;
+			border: 1px solid black;
+			border-radius: 15px;
+			background-color: #0af;
+			font-size: 32px;
+			transition-duration: 1s;
+		}
+		.contato button:hover	{
+			background-color: #05f;
+			transform: scale(1.1);
+			transition-duration: 1s;
+
+		}
+	/*Fim*/
+/*Fim Contato*/

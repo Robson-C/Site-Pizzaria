@@ -1,2 +1,2 @@
 # Site-Pizzaria
-Site experimental para uma pizzaria.
+Site experimental para uma pizzaria!
